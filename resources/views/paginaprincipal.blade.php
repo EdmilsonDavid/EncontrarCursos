@@ -6,14 +6,66 @@
 	<title>HarrisonHighSchool</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	<!-- AdminLTE Skins. Choose a skin from the css/skins
+		 folder instead of downloading all of them to reduce the load. -->
+	<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	<style>
+	  .example-modal .modal {
+		position: relative;
+		top: auto;
+		bottom: auto;
+		right: auto;
+		left: auto;
+		display: block;
+		z-index: 1;
+	  }
+
+	  .example-modal .modal {
+		background: transparent !important;
+	  }
+
+	</style>
+
 </head>
-<body>
+
+
 
 	<header id="header">
+
+<!-- Button trigger modal -->
+<button style="float: right" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong">
+		Login
+	  </button>
+	  <button style="float: right" type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+			Registar-se
+	  </button>
+
+
+
+
 		<div class="container">
+
+
 			<a href="index.html" title="HarrisonHighSchool" style="text-align: left">           </a>
 			<a href="index.html" title="HarrisonHighSchool" style="text-align: left"></a>
 			<a href="index.html" title="HarrisonHighSchool" style="text-align: left">           </a>
@@ -23,37 +75,41 @@
 			<a href="index.html" title="HarrisonHighSchool" style="text-align: left">           </a>
 			<a href="index.html" title="HarrisonHighSchool" style="text-align: left"></a>
 			<a href="index.html" id="logo" title="HarrisonHighSchool">Edmulsse Scholl</a>
-			
-			<div class="menu-trigger"></div>
+
+			<div class="menu-trigger"> </div>
 			<nav id="menu">
 				<ul>
 					<li><a href="events.html">Cursos</a></li>
 					<li><a href="gallery.html">Institutos</a></li>
 					<li><a href="events.html">Eventos</a></li>
+
+
  				</ul>
 				<ul>
 					<li><a href="gallery.html">Faculdades</a></li>
 					<li><a href="gallery.html">Explicacao</a></li>
 					<li><a href="#fancy" class="get-contact">Contacto</a></li>
+
 				</ul>
-				
-				  
+
+
 			</nav>
-			
+
 			<!-- / navigation -->
 		</div>
 		<!-- / container -->
-	
+
+
 	</header>
 	<!-- / header -->
-	
+
 	<div class="slider">
 		<ul class="bxslider">
 			<li>
 				<div class="container">
 					<div class="info">
 						<h2>Chegou a Hora <br><span>Localize o seu Centro de Estudos</span></h2>
-					
+
 					</div>
 				</div>
 				<!-- / content -->
@@ -71,7 +127,7 @@
 				<div class="container">
 					<div class="info">
 						<h2> Txuna-la Essa Sena <br><span> Pega no Seu Book e Vamos-la</span></h2>
-						
+
 					</div>
 				</div>
 				<!-- / content -->
@@ -79,7 +135,7 @@
 		</ul>
 		<div class="bg-bottom"></div>
 	</div>
-	
+
 	<section class="posts">
 		<div class="container">
 			<article>
@@ -252,10 +308,222 @@
 			</div>
 		</form>
 	</div>
+	  <!-- Modal -->
+	  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLongTitle">Introduza as credenciais</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+						<div class="form-group">
+								<label for="recipient-name" class="col-form-label">User-Name </label>
+								<input type="text" class="form-control" id="recipient-name">
+							  </div>
+							  <div class="form-group">
+								<label for="message-text" class="col-form-label">Palavra-Passe</label>
+								<input type="text" class="form-control" id="recipient-name">
+							  </div>
+							</form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				  <button type="button" class="btn btn-primary">Entrar</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLongTitle">Introduza as credenciais</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+						<div class="form-group">
+								<label for="recipient-name" class="col-form-label">User-Name </label>
+								<input type="text" class="form-control" id="recipient-name">
+							  </div>
+							  <div class="form-group">
+								<label for="message-text" class="col-form-label">Palavra-Passe</label>
+								<input type="text" class="form-control" id="recipient-name">
+							  </div>
+							</form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				  <button type="button" class="btn btn-primary">Entrar</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <!-- /.modal -->
+
+		  <div class="modal modal-info fade" id="modal-info">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				  <h4 class="modal-title">Qual o seu Interesse?</h4>
+				</div>
+				<div class="modal-body">
+
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal" data-target="#instituicao" data-dismiss="modal" >INSTITUICAO </button>
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal" data-target="#estudante" data-dismiss="modal" >ESTUDANTE </button>
+				  </div>
+			  </div>
+			  <!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		  </div>
+
+
+		  <!-- /.modal para o cadastro de Instituicao -->
+
+		  <div class="modal modal-info fade" id="instituicao" data-target="#exampleModalLong" >
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				  <h4 class="modal-title">Qual o seu Interesse?</h4>
+				</div>
+				<div class="modal-body">
+					<div class="box box-danger">
+						<div class="box-header with-border">
+						  <h3 class="box-title">Formulario</h3>
+						</div>
+						<div class="box-body">
+						  <div class="row">
+							<div class="col-xs-6">
+							  <input type="text" class="form-control" placeholder="Nome Da Instituicao">
+							  <input type="text" class="form-control" placeholder="Localizacao">
+							  <input type="text" class="form-control" placeholder="Desscricao da Instituicao">
+							  <input type="date" class="form-control" placeholder=" Data de formacao">
+							  <input type="text" class="form-control" placeholder="Tipo de formacao">
+
+							</div>
+							<div class="col-xs-6">
+
+								<input type="text" class="form-control" placeholder="introduza a categoria">
+								<input type="tel" class="form-control" placeholder="Introduza o Numero de Telefone">
+
+								<input type="text" class="form-control" placeholder="seu User-Name:">
+								<input type="password" class="form-control" placeholder="Sua palavra-Passe:">
+								<input type="password" class="form-control" placeholder="introduza novamente">
+							  </div>
+						  </div>
+
+
+						</div>
+						<!-- /.box-body -->
+					  </div>
+				</div>
+
+				<div class="modal-footer">
+
+
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" >Registar </button>
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" > Cancelar </button>
+
+
+				  </div>
+			  </div>
+			  <!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		  </div>
+
+
+
+
+
+		   <!-- /.modal para o cadastro do Estudante -->
+
+		   <div class="modal  modal-success fade" id="estudante" data-target="#exampleModalLong" >
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				  <h4 class="modal-title">Qual o seu Interesse?</h4>
+				</div>
+				<div class="modal-body">
+					<div class="box box-danger">
+						<div class="box-header with-border">
+						  <h3 class="box-title">Formulario</h3>
+						</div>
+						<div class="box-body">
+						  <div class="row">
+							<div class="col-xs-6">
+
+							  <input type="text" class="form-control" placeholder="Introduza o seu nome">
+							  <input type="text" class="form-control" placeholder="Introduza a sua morada">
+							  <input type="text" class="form-control" placeholder="Introduza a sua nacionalidade:">
+							  <input type="text" class="form-control" placeholder="Introduza a sua Naturalidade">
+							  <input type="text" class="form-control" placeholder="Digite o seu numero de telefone">
+
+							</div>
+							<div class="col-xs-6">
+
+								<input type="text" class="form-control" placeholder="Email">
+								<input type="text" class="form-control" placeholder="Introduza o Numero de Telefone">
+								<input type="text" class="form-control" placeholder="Introduza o Endereco">
+								<input type="text" class="form-control" placeholder="Codigo Postal:">
+								<input type="text" class="form-control" placeholder="Contacto alternativo:">
+							  </div>
+						  </div>
+
+
+						</div>
+						<!-- /.box-body -->
+					  </div>
+				</div>
+
+				<div class="modal-footer">
+
+
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" >Registar </button>
+					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" > Cancelar </button>
+
+
+				  </div>
+			  </div>
+			  <!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		  </div>
+
+
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
 </body>
 </html>

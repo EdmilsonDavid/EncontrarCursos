@@ -15,15 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index', function () {
-    return view('index');
-});
+Route::get('estudante', 'estudanteControlo@index');
 
 Route::get('paginaprincipal', function () {
     return view('paginaprincipal');
 });
 
 
-Route::get('estudante', function () {
-    return view('estudante');
-});
+ Route::get('instituicoes', function () {
+    return view('instituicoes');
+ });
