@@ -24,7 +24,9 @@
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
 		 folder instead of downloading all of them to reduce the load. -->
 	<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 	<!--[if lt IE 9]>
+
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
@@ -292,22 +294,7 @@
 	</footer>
 	<!-- / footer -->
 
-	<div id="fancy">
-		<h2>Pedir Informacao</h2>
-		<form action="#">
-			<div class="left">
-				<fieldset class="mail"><input placeholder="Edereco do Email" type="text"></fieldset>
-				<fieldset class="name"><input placeholder="Nome..." type="text"></fieldset>
-				<fieldset class="subject"><select><option>Escolha o tema</option><option>Escolha o Assunto</option><option>Escolha o Tema</option></select></fieldset>
-			</div>
-			<div class="right">
-				<fieldset class="question"><textarea placeholder="A pergunta"></textarea></fieldset>
-			</div>
-			<div class="btn-holder">
-				<button class="btn blue" type="submit">Enviar a Informacao</button>
-			</div>
-		</form>
-	</div>
+
 	  <!-- Modal -->
 	  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 			<div class="modal-dialog" role="document">
@@ -367,6 +354,32 @@
 		  </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		  <!-- /.modal -->
 
 		  <div class="modal modal-info fade" id="modal-info">
@@ -392,61 +405,187 @@
 		  </div>
 
 
-		  <!-- /.modal para o cadastro de Instituicao -->
-
-		  <div class="modal modal-info fade" id="instituicao" data-target="#exampleModalLong" >
-			<div class="modal-dialog">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span></button>
-				  <h4 class="modal-title">Qual o seu Interesse?</h4>
-				</div>
-				<div class="modal-body">
-					<div class="box box-danger">
-						<div class="box-header with-border">
-						  <h3 class="box-title">Formulario</h3>
-						</div>
-						<div class="box-body">
-						  <div class="row">
-							<div class="col-xs-6">
-							  <input type="text" class="form-control" placeholder="Nome Da Instituicao">
-							  <input type="text" class="form-control" placeholder="Localizacao">
-							  <input type="text" class="form-control" placeholder="Desscricao da Instituicao">
-							  <input type="date" class="form-control" placeholder=" Data de formacao">
-							  <input type="text" class="form-control" placeholder="Tipo de formacao">
-
-							</div>
-							<div class="col-xs-6">
-
-								<input type="text" class="form-control" placeholder="introduza a categoria">
-								<input type="tel" class="form-control" placeholder="Introduza o Numero de Telefone">
-
-								<input type="text" class="form-control" placeholder="seu User-Name:">
-								<input type="password" class="form-control" placeholder="Sua palavra-Passe:">
-								<input type="password" class="form-control" placeholder="introduza novamente">
-							  </div>
-						  </div>
 
 
-						</div>
-						<!-- /.box-body -->
-					  </div>
-				</div>
-
-				<div class="modal-footer">
 
 
-					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" >Registar </button>
-					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" > Cancelar </button>
 
 
-				  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- /.
+
+
+
+
+				modal para o cadastro de Instituicao -->
+
+		  <div style="width: 100% !important"  class="modal modal-info fade" id="instituicao" data-target="#exampleModalLong" >
+			<div  style="width: 80% !important" class="modal-dialog">
+			  <div  style="width: 100% !important" class="modal-content">
+					<div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title"> Registe a sua instituicao de ensino0 </h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form action="xxx.html" method="POST" class="form-horizontal">
+
+
+							<div class="box-body">
+              	<div class="row">
+									<div class="col-xs-4">
+
+									<div class="box box-primary">
+
+										<!-- /.box-header -->
+										<!-- form start -->
+										<form role="form">
+											<div class="box-body">
+												<div class="form-group">
+													<label for="exampleInputEmail1">Instituicao</label>
+													<input type="text" class="form-control" id="exampleInputEmail1" name="nome" placeholder="Introduza o nome da instituicao!">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputEmail1">Descricao</label>
+                                                    <textarea name="" id="exampleInputEmail1" cols="30" rows="10"></textarea>
+
+												</div>
+
+
+
+											</div>
+
+										</div>
+
+
+									</div>
+									<div class="col-xs-4">
+
+										<div class="box box-primary">
+
+											<!-- /.box-header -->
+											<!-- form start -->
+											<form role="form">
+												<div class="box-body">
+													<div class="form-group">
+														<label for="exampleInputEmail1">Bairro</label>
+														<input type="text" class="form-control" id="exampleInputEmail1" name="bairro" placeholder="Introduza o nome do bairro!">
+													</div>
+
+													<div class="form-group">
+														<label for="exampleInputEmail1"> Telefone </label>
+														<input type="text" class="form-control" id="exampleInputEmail1" name="telefone" placeholder="Numero de telefone">
+													</div>
+
+													<div class="form-group">
+														<label for="exampleInputEmail1">Email</label>
+														<input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Introduza o seu email">
+													</div>
+
+                                                    <div class="form-group">
+													  <label for="exampleInputEmail1">Provincia</label>
+													  <input type="text" class="form-control" id="exampleInputEmail1" name="provincia" placeholder="Provincia">
+												     </div>
+
+
+
+												</div>
+
+											</div>
+
+
+										</div>
+
+										<div class="col-xs-4">
+
+											<div class="box box-primary">
+
+												<!-- /.box-header -->
+												<!-- form start -->
+												<form role="form">
+													<div class="box-body">
+														<div class="form-group">
+															<label for="exampleInputEmail1">User-Name</label>
+															<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Introduza o User-name">
+														</div>
+														<div class="form-group">
+															<label for="exampleInputEmail1">Password</label>
+															<input type="password" class="form-control" id="exampleInputEmail1" placeholder="Introduza o password">
+														</div>
+														<div class="form-group">
+															<label for="exampleInputEmail1">Repetir o Password</label>
+															<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Repita o password!">
+														</div>
+
+
+
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+                </div>
+              </div>
+
+
+
+
+              <!-- /.box-body -->
+              <div class="box-footer">
+
+                <button type="submit" class="btn btn-info pull-right">Registar</button>
+              </div>
+              <!-- /.box-footer -->
+
+
+						</form>
+
+          </div>
 			  </div>
 			  <!-- /.modal-content -->
 			</div>
 			<!-- /.modal-dialog -->
 		  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -455,58 +594,129 @@
 		   <!-- /.modal para o cadastro do Estudante -->
 
 		   <div class="modal  modal-success fade" id="estudante" data-target="#exampleModalLong" >
-			<div class="modal-dialog">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span></button>
-				  <h4 class="modal-title">Qual o seu Interesse?</h4>
-				</div>
-				<div class="modal-body">
-					<div class="box box-danger">
-						<div class="box-header with-border">
-						  <h3 class="box-title">Formulario</h3>
-						</div>
-						<div class="box-body">
-						  <div class="row">
-							<div class="col-xs-6">
-
-							  <input type="text" class="form-control" placeholder="Introduza o seu nome">
-							  <input type="text" class="form-control" placeholder="Introduza a sua morada">
-							  <input type="text" class="form-control" placeholder="Introduza a sua nacionalidade:">
-							  <input type="text" class="form-control" placeholder="Introduza a sua Naturalidade">
-							  <input type="text" class="form-control" placeholder="Digite o seu numero de telefone">
-
+				<div  style="width: 100% !important" class="modal-dialog">
+					<div  style="width: 100% !important" class="modal-content">
+						<div class="box box-info">
+							<div class="box-header with-border">
+								<h3 class="box-title">Registe-se</h3>
 							</div>
-							<div class="col-xs-6">
+							<!-- /.box-header -->
+							<!-- form start -->
+							<form action="/registarEstudante" method="POST" class="form-horizontal">
 
-								<input type="text" class="form-control" placeholder="Email">
-								<input type="text" class="form-control" placeholder="Introduza o Numero de Telefone">
-								<input type="text" class="form-control" placeholder="Introduza o Endereco">
-								<input type="text" class="form-control" placeholder="Codigo Postal:">
-								<input type="text" class="form-control" placeholder="Contacto alternativo:">
-							  </div>
-						  </div>
+                                                  {{csrf_field()}}
+								<div class="box-body">
+									<div class="row">
+										<div class="col-xs-6">
 
+										<div class="box box-primary">
+
+											<!-- /.box-header -->
+
+
+												<div class="box-body">
+                                                    <div class="form-group">
+													 <label for="exampleInputEmail1">Nome</label>
+													 <input type="text" class="form-control" id="exampleInputEmail1" name="nome" placeholder="Introduza o seu nome">
+												   </div>
+												 <div class="form-group">
+													<label for="exampleInputEmail1">Morada:</label>
+													<input type="text" class="form-control" id="exampleInputEmail1" name="morada" placeholder="Introduza a sua morada">
+												 </div>
+												 <div class="form-group">
+													<label for="exampleInputEmail1">Nacionalidade</label>
+													<input type="text" class="form-control" id="exampleInputEmail1" name="nacionalidade" placeholder="Introduza a sua nacionalidade">
+												 </div>
+
+
+
+												</div>
+
+											</div>
+
+
+										</div>
+										<div class="col-xs-6">
+
+											<div class="box box-primary">
+
+												<!-- /.box-header -->
+
+
+													<div class="box-body">
+                                                     <div class="form-group">
+														<label for="exampleInputEmail1">Naturalidade</label>
+														<input type="text" class="form-control" id="exampleInputEmail1" name="naturalidade" placeholder="Introduza a sua naturalidade">
+													 </div>
+
+													 <div class="form-group">
+														<label for="exampleInputEmail1"> Telefone </label>
+														<input type="text" class="form-control" id="exampleInputEmail1" name="telefone" placeholder="Numero de telefone">
+													 </div>
+
+													 <div class="form-group">
+														<label for="exampleInputEmail1">Email</label>
+														<input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Introduza o seu email">
+													 </div>
+                                                     <div class="form-group">
+														<label for="exampleInputEmail1"> User-Name </label>
+														<input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="Numero de telefone">
+													 </div>
+
+													 <div class="form-group">
+														<label for="exampleInputEmail1">Password</label>
+														<input type="password" class="form-control" id="exampleInputEmail1" name="password" placeholder="Introduza o seu email">
+													 </div>
+
+
+
+
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+
+
+									</div>
+								</div>
+
+
+
+
+								<!-- /.box-body -->
+								<div class="box-footer">
+									<button type="submit" class="btn btn-default">Cancelar</button>
+									<button type="submit"  class="btn btn-info pull-right">Registar</button>
+								</div>
+								<!-- /.box-footer -->
+
+
+							</form>
 
 						</div>
-						<!-- /.box-body -->
-					  </div>
+					</div>
+					<!-- /.modal-content -->
 				</div>
-
-				<div class="modal-footer">
-
-
-					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" >Registar </button>
-					<button type="button" class="btn btn-outline pull-left" data-toggle="modal"  data-dismiss="modal" > Cancelar </button>
-
-
-				  </div>
-			  </div>
-			  <!-- /.modal-content -->
-			</div>
-			<!-- /.modal-dialog -->
+				<!-- /.modal-dialog -->
+				</div>
 		  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

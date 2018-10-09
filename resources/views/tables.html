@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- PAno level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="pAno-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="index.html">Pagina Inicial</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text">Graficos</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="charts.html">
+              <i class="fa fa-fw fa-area-chart"></i>
+              <span class="nav-link-text">Estatistica</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="tables.html">
+              <i class="fa fa-fw fa-table"></i>
+              <span class="nav-link-text">Tabelas</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa-wrench"></i>
+              <span class="nav-link-text">Cursos</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseComponents">
+              <li>
+                <a href="navbar.html">Cadastrar Novos Cursos</a>
+              </li>
+              <li>
+                <a href="cards.html">Remover Cursos </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example PAnos">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePAnos" data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa-file"></i>
+              <span class="nav-link-text">Detalhes</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseExamplePAnos">
+              <li>
+                <a href="login.html">Cadastrar Localizacao</a>
+              </li>
+              <li>
+                <a href="register.html">Informcacao de Cursos</a>
+              </li>
+              <li>
+                <a href="forgot-password.html">Professores </a>
+              </li>
+              <li>
+                <a href="blank.html">Duracao</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa-sitemap"></i>
+              <span class="nav-link-text">Niveis</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseMulti">
+              <li>
+                <a href="#">Ensino Secundario</a>
+              </li>
+              <li>
+                <a href="#">Universidades & Institutos</a>
+              </li>
+              <li>
+                <a href="#"> Explicacao </a>
+              </li>
+              <li>
+                <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Centro de aulas</a>
+                <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                  <li>
+                    <a href="#">Preparacao Exames Normais</a>
+                  </li>
+                  <li>
+                    <a href="#">Exames de Admissao</a>
+                  </li>
+                  <li>
+                    <a href="#">Exames Extraordinario</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa-link"></i>
+              <span class="nav-link-text">Exames </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="messAnosDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="d-lg-none">MensAnons
+                <span class="badge badge-pill badge-primary">12 novas</span>
+              </span>
+              <span class="indicator text-primary d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="messAnosDropdown">
+              <h6 class="dropdown-header">Novas MensAnons</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Edmilson Ngamula</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-messAno small">Saudacoes gostaria de saber como faco para efectuar as inscricoes das cadeiras</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Uamusse chamussa</strong>
+                <span class="small float-right text-muted">21:21 AM</span>
+                <div class="dropdown-messAno small">tenho duvida em encontrar um explicador na cadeira de Redes como faco para encontrar alguem</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Telinha da Chamussa</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-messAno small">Eu sou um programador e gostaria de leccionar na vossa instituicao, gostaria de saber como faco?.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Visualizar todas MensAnons</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-bell"></i>
+              <span class="d-lg-none">Alertas
+                <span class="badge badge-pill badge-warning">6 Novas</span>
+              </span>
+              <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">Novas Alertas:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Actualizacoes</strong>
+                </span>
+                <span class="small float-right text-muted">19:21 AM</span>
+                <div class="dropdown-messAno small">O systema possui novas actualizacoes, queira actualiza-lo.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-danger">
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Situacao da Actualizacao</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-messAno small">Obtenha a nova versar do seu Site</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>situacao de Actualizacao</strong>
+                </span>
+                <span class="small float-right text-muted">02:21 AM</span>
+                <div class="dropdown-messAno small">Conecta a internet para que obtenhas mais informacoes sobre o seu site.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Ver todas alertas</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="procurando por...">
+                <span class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Tabela</a>
+        </li>
+        <li class="breadcrumb-item active">Tabela das Instituicoes cadastradas no Sistema</li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Instituicoes/Estudantes/Interresados Cadastrados</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>posicao</th>
+                  <th>Provincia</th>
+                  <th>Ano</th>
+                  <th>Data de Inicio</th>
+                  <th>Salario</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>posicao</th>
+                  <th>Provincia</th>
+                  <th>Ano</th>
+                  <th>Data de Inicio</th>
+                  <th>Salario</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Edmilso Ngamula</td>
+                  <td>Programador</td>
+                  <td>Inhambane</td>
+                  <td>23</td>
+                  <td>12 de Junho de 2018</td>
+                  <td>$320,800</td>
+                </tr>
+                <tr>
+                  <td>Euliterio Mahunde</td>
+                  <td>Programador</td>
+                  <td>Gaza</td>
+                  <td>19</td>
+                  <td>2011/07/25</td>
+                  <td>$170,750</td>
+                </tr>
+                <tr>
+                  <td>Evagelino Ximines</td>
+                  <td> Tecnico Informatico</td>
+                  <td>Quelimane</td>
+                  <td>23</td>
+                  <td>2009/01/12</td>
+                  <td>$86,000</td>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Area de actuacao</th>
+                    <th>Provincia</th>
+                    <th>Ano</th>
+                    <th>Data de Inicio</th>
+                    <th>Salario</th>
+                  </tr>
+                <tr>
+                  <td>Nilo Eugenio</td>
+                  <td>Front-End</td>
+                  <td>Nampula</td>
+                  <td>22</td>
+                  <td>22 de Junho de 1997</td>
+                  <td>50.500Mt</td>
+                </tr>
+                <tr>
+                  <td>Euliterio Maunde</td>
+                  <td>Estudante</td>
+                  <td>Maputo</td>
+                  <td>23</td>
+                  <td> 14 de Maio de 1997</td>
+                  <td>600.000Mt</td>
+                </tr>
+                <tr>
+                  <td>Nilo Eugenio</td>
+                  <td>Front-End</td>
+                  <td>Nampula</td>
+                  <td>22</td>
+                  <td>22 de Junho de 1997</td>
+                  <td>50.500Mt</td>
+                </tr>
+                <tr>
+                    <td>Evagelino Ximines</td>
+                    <td> Tecnico Informatico</td>
+                    <td>Quelimane</td>
+                    <td>23</td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                  </tr>
+                  <tr>
+                    <td>Domingos Bento</td>
+                    <td>Escritor </td>
+                    <td>Nampula</td>
+                    <td>22</td>
+                    <td>22 de Setembro</td>
+                    <td>50.500Mt</td>
+                  </tr>
+                <tr>
+                  <td>Nilo Eugenio</td>
+                  <td>Front-End</td>
+                  <td>Nampula</td>
+                  <td>22</td>
+                  <td>22 de Junho de 1997</td>
+                  <td>50.500Mt</td>
+                </tr>
+                <tr>
+                    <td>Evagelino Ximines</td>
+                    <td> Tecnico Informatico</td>
+                    <td>Quelimane</td>
+                    <td>23</td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                  </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>posicao</th>
+                    <th>Provincia</th>
+                    <th>Ano</th>
+                    <th>Data de Inicio</th>
+                    <th>Salario</th>
+                  </tr>
+                  <tr>
+                    <td>Nilo Eugenio</td>
+                    <td>Front-End</td>
+                    <td>Nampula</td>
+                    <td>22</td>
+                    <td>22 de Junho de 1997</td>
+                    <td>50.500Mt</td>
+                  </tr>
+              
+                <tr>
+                  <td>Tatyana Fitzpatrick</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td>19</td>
+                  <td>2010/03/17</td>
+                  <td>$385,750</td>
+                </tr>
+                <tr>
+                  <td>Michael Silva</td>
+                  <td>Marketing Designer</td>
+                  <td>London</td>
+                  <td>66</td>
+                  <td>2012/11/27</td>
+                  <td>$198,500</td>
+                </tr>
+                <tr>
+                  <td>Domingos Bento</td>
+                  <td>Escritor </td>
+                  <td>Nampula</td>
+                  <td>22</td>
+                  <td>22 de Setembro</td>
+                  <td>50.500Mt</td>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>posicao</th>
+                    <th>Provincia</th>
+                    <th>Ano</th>
+                    <th>Data de Inicio</th>
+                    <th>Salario</th>
+                  </tr>
+                  <tr>
+                    <td>Domingos Bento</td>
+                    <td>Escritor </td>
+                    <td>Nampula</td>
+                    <td>22</td>
+                    <td>22 de Setembro</td>
+                    <td>50.500Mt</td>
+                  </tr>
+                <tr>
+                  <td>Dai Rios</td>
+                  <td>Personnel Lead</td>
+                  <td>Edinburgh</td>
+                  <td>35</td>
+                  <td>2012/09/26</td>
+                  <td>$217,500</td>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>posicao</th>
+                    <th>Provincia</th>
+                    <th>Ano</th>
+                    <th>Data de Inicio</th>
+                    <th>Salario</th>
+                  </tr>
+                <tr>
+                  <td>Yuri Berry</td>
+                  <td>Chief Marketing Provinciar (CMO)</td>
+                  <td>New York</td>
+                  <td>40</td>
+                  <td>2009/06/25</td>
+                  <td>$675,000</td>
+                </tr>
+                <tr>
+                  <td>Joseph </td>
+                  <td>Analista de Sistema - Programming</td>
+                  <td>Tete</td>
+                  <td>22</td>
+                  <td>22 de Junho de 1997</td>
+                  <td>990.500Mt</td>
+                </tr>
+                <tr>
+                  <td>Doris Wilder</td>
+                  <td>Sales Assistant</td>
+                  <td>Sidney</td>
+                  <td>23</td>
+                  <td>2010/09/20</td>
+                  <td>$85,600</td>
+                </tr>
+                <tr>
+                  <td>Metilage Hilario</td>
+                  <td> Analista de Sistema</td>
+                  <td>Pemba</td>
+                  <td>24</td>
+                  <td>1996/10/09</td>
+                  <td>1,200,000</td>
+                </tr>
+                <tr>
+                  <td>Joseph </td>
+                  <td>Analista de Sistema - Programming</td>
+                  <td>Tete</td>
+                  <td>22</td>
+                  <td>22 de Junho de 1997</td>
+                  <td>990.500Mt</td>
+                </tr>
+                <tr>
+                  <td>Domingos Bento</td>
+                  <td>Escritor </td>
+                  <td>Nampula</td>
+                  <td>22</td>
+                  <td>22 de Setembro</td>
+                  <td>50.500Mt</td>
+                </tr>
+               
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Actualizado pelas 13h:43min</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Direitos reservados</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#pAno-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Queres Sair</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Caso queiras sair click no sair, caso na no Cancelar</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            <a class="btn btn-primary" href="login.html">Sair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- PAno level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pAnos-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this pAno-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  </div>
+</body>
+
+</html>

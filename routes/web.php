@@ -15,13 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('estudante', 'estudanteControlo@index');
-
-Route::get('paginaprincipal', function () {
-    return view('paginaprincipal');
+Route::get('estudantemodelo', function () {
+    return view('modelEstudante');
 });
 
+Route::get('estudante', 'estudanteControlo@index');
 
- Route::get('instituicoes', function () {
-    return view('instituicoes');
- });
+Route::get('paginaprincipal', 'estudanteControlo@create');
+//Route::get('paginaprincipal', function () {
+  //  return view('paginaprincipal');
+//});
+
+
+// Route::get('paginaprincipal', function () {
+//    return view('paginaprincipal');
+ //});
+
+ Route::post('registarEstudante','estudanteControlo@store');
